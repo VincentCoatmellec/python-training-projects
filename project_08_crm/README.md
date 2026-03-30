@@ -32,23 +32,23 @@ Later, I will also use this project to practice:
 
 ## How to Run It
 
-1. **Accède au dossier du projet** :
+1. **Navigate to the project directory**:
    ```bash
    cd project_08_crm
    ```
 
-2. **Crée et active un environnement virtuel** (recommandé) :
+2. **Create and activate a virtual environment** (recommended):
    ```bash
    python3 -m venv venv
-   source venv/bin/activate  # Sur Windows : `venv\Scripts\activate`
+   source venv/bin/activate  # On Windows: `venv\Scripts\activate`
    ```
 
-3. **Installe les dépendances** :
+3. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Lance le programme** :
+4. **Run the program**:
    ```bash
    python3 src/user_generator/main.py
    ```

@@ -1,7 +1,4 @@
 drafts/
-project_06_folder_structure_generator/Employees
-project_06_folder_structure_generator/Films
-project_06_folder_structure_generator/Programming
 project_08_crm/UserGenerator/env
 *__pycache__/
 *.log
