@@ -1,12 +1,14 @@
 import sys
 import os
 import json
+from pathlib import Path
 
-CUR_DIR = os.path.dirname(__file__)
-FILE_PATH = os.path.join(CUR_DIR, "liste.json")
+SOURCE_FILE = Path(__file__).resolve()
+CUR_DIR = SOURCE_FILE.parent.parent
+DATA_FILE = CUR_DIR / "data" / "liste.json"
 
-if os.path.exists(FILE_PATH):
-    with open(FILE_PATH, "r") as f:
+if DATA_FILE.exists():
+    with open(DATA_FILE, "r") as f:
         LISTE = json.load(f)
 else:
     LISTE = []
@@ -53,7 +55,8 @@ while True:
         print(f"Your list has been succefully cleared!")
 
     elif int(user_choice) == 5:
-        with open(FILE_PATH, "w") as f:
+        DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
+        with open(DATA_FILE, "w") as f:
             json.dump(LISTE, f, indent=4)
         print("See you later!")
         sys.exit()

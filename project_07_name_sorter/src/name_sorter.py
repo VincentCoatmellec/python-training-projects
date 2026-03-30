@@ -1,8 +1,8 @@
 from pathlib import Path
 
 CURRENT_FILE = Path(__file__).resolve()
-PARENT_DIR = CURRENT_FILE.parent
-file = PARENT_DIR / "names.txt"
+PARENT_DIR = CURRENT_FILE.parent.parent
+file = PARENT_DIR / "data" / "names.txt"
 
 # Read the content of the file and split it into lines
 with open(file, "r") as f:
