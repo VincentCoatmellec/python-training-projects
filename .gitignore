@@ -1,5 +1,17 @@
+# Working directories
 drafts/
-project_08_crm/UserGenerator/env
-*__pycache__/
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+
+# Logs
+logs/
 *.log
+
+# OS
 .DS_Store
