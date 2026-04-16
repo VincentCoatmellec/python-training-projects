@@ -30,3 +30,6 @@ Shopping list application refactored with object-oriented programming, supportin
 
 ### 09 - User Manager
 Simple Python project to manage users’ contact information, serving as a small address book while practicing professional project structure and coding basics.
+
+### 10 - User Manager v2
+Improved version of the User Manager using OOP with a `dataclass`, data validation, and TinyDB as a lightweight local database to store and manage users persistently.
