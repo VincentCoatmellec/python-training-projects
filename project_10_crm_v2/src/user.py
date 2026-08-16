@@ -14,13 +14,13 @@ class User:
     first_name: str
     last_name: str
     phone_number: str = ""
-    adress: str = ""
+    address: str = ""
 
     def __repr__(self) -> str:
         return f"User({self.first_name}, {self.last_name})"
 
     def __str__(self) -> str:
-        return f"{self.full_name}\n{self.phone_number}\n{self.adress}"
+        return f"{self.full_name}\n{self.phone_number}\n{self.address}"
 
     @property
     def full_name(self) -> str:
@@ -72,7 +72,7 @@ class User:
         special_characters = string.digits + string.punctuation
 
         if any(character in special_characters for character in self.first_name + self.last_name):
-            raise ValueError(f"Nom invalide {self.full_name}")
+            raise ValueError(f"Invalid name {self.full_name}")
 
     def exists(self) -> bool:
         """ Function to check if the user exists in the database

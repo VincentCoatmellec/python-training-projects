@@ -14,10 +14,10 @@ def seed(n: int = 10):
             first_name=fake.first_name(),
             last_name=fake.last_name(),
             phone_number=fake.phone_number(),
-            adress=fake.address()
+            address=fake.address()
         )
         user.save()
 
 
 if __name__ == "__main__":
-    seed(2)
+    seed(30)
