@@ -41,4 +41,4 @@ Desktop currency converter with a PySide6 graphical interface, introducing GUI p
 PySide6 desktop app to manage a movie club's film list (add, remove, duplicate detection) with persistent JSON storage.
 
 ### 13 - Doc Blog
-Description to come...
+First Django website, built to learn the framework's basics: project/app structure, routing, views, templates, static files, and `.env`-based configuration.
