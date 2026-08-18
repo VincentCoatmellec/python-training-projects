@@ -59,3 +59,13 @@ The program lets you create, save, retrieve, and delete users from a local JSON 
    python3 src/seed.py
 ```
 ---
+
+## Running Tests
+
+Unit tests are written with `pytest` and located in the `tests/` directory.
+
+To run them:
+```bash
+   pytest
+```
+---

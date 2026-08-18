@@ -58,7 +58,7 @@ class User:
         phone_number = re.sub(r"[+()\s]*", "", self.phone_number)
         if len(phone_number) < 10 or not phone_number.isdigit():
             raise ValueError(
-                f"Numéro de téléphone {self.phone_number} invalid")
+                f"Phone number is {self.phone_number} invalid")
 
     def _check_names(self) -> None:
         """Function to check the validity of the names
@@ -67,7 +67,7 @@ class User:
             ValueError: If the names are invalid
         """
         if not (self.first_name and self.last_name):
-            raise ValueError("Le prénom et le nom ne peuvent pas être vide")
+            raise ValueError("First name and last name are required")
 
         special_characters = string.digits + string.punctuation
 
