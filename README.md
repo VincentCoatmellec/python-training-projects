@@ -33,3 +33,12 @@ Simple Python project to manage users’ contact information, serving as a small
 
 ### 10 - User Manager v2
 Improved version of the User Manager using OOP with a `dataclass`, data validation, and TinyDB as a lightweight local database to store and manage users persistently.
+
+### 11 - FX Converter
+Desktop currency converter with a PySide6 graphical interface, introducing GUI programming concepts such as classes, widgets, and event handling.
+
+### 12 - Movie Club
+PySide6 desktop app to manage a movie club's film list (add, remove, duplicate detection) with persistent JSON storage.
+
+### 13 - Doc Blog
+Description to come...
